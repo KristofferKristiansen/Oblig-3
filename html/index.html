@@ -15,11 +15,12 @@
     <div id="grid-container">
     <header>
         <nav>
-            <a href="#" id="logo">Footies</a>
+            <a href="index.html" id="logo">Footies</a>
             <div>
-                <i class="fa-solid fa-magnifying-glass"></i>
                 <i id="ham" class="fa-solid fa-bars"></i>
-                <i class="fa-solid fa-cart-shopping"></i>
+                <i id="search" class="fa-solid fa-magnifying-glass"></i>
+                <i id="vogn" class="fa-solid fa-cart-shopping"></i>
+                <i class="fa-solid fa-user"></i>
             </div>
             <ul class="navbar">
                 <li><a href="index.html">Home</a></li>
@@ -29,31 +30,46 @@
         </nav> 
     </header>
     <main>
-        <section>
-            <img src="https://placehold.co/600x400" alt="Grå ramme">
+        <section class="flex-section">
+            <img src="img/boot-250012_1280.jpg" alt="grå ramme">
             <section>
                 <h2>Shop Here</h2>
             </section>
         </section>
-        <section>
-            <img src="https://placehold.co/600x400" alt="Grå Ramme 2">
+        <section class="flex-section 2">
+            <img src="img/fashion-1284496_1280.jpg" alt="grå Ramme 2">
             <section>
                 <h2>Fallsale</h2>
             </section>
         </section>
-        <section>
-            <img src="https://placehold.co/600x400" alt="2 grå rammer">
+        <section class="flex-section left">
+            <img src="img/istockphoto-1394359729-612x612.jpg" alt="liten grå ramme 1">
             <section>
                 <h2>Men</h2>
+            </section>
+            <section class="flex-section right">
+                <img src="img/istockphoto-1323542965-612x612.jpg" alt="liten grå ramme 2">
+            </section>
+            <section>
                 <h2>Women</h2>
             </section>
         </section>
     </main>
     <footer>
         <h3>Back to top</h3>
-        <i class="fa-regular fa-circle-question"></i>
-        <i class="fa-solid fa-user"></i>
     </footer>
     </div>
+    <script>
+        
+        let x = document.querySelector(".navbar")
+        
+        document.getElementById("ham").addEventListener("click", (e) => {
+            if (x.classname === "navbar") {
+                x.classname += " responsive";
+            } else {
+                x.classname = "navbar"
+            }
+        })
+    </script>
 </body>
 </html>

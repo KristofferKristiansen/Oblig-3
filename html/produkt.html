@@ -15,7 +15,7 @@
     <div id="grid-container">
     <header>
         <nav>
-            <a href="#" id="logo">Footies</a>
+            <a href="index.html" id="logo">Footies</a>
             <div>
                 <i class="fa-solid fa-magnifying-glass"></i>
                 <i class="fa-solid fa-bars"></i>
@@ -68,5 +68,17 @@
         <i class="fa-solid fa-user"></i>
     </footer>
 </div>
+<script>
+
+        let x = document.querySelector(".navbar")
+        
+        document.getElementById("ham").addEventListener("click", (e) => {
+            if (x.classname === "navbar") {
+                x.classname += " responsive";
+            } else {
+                x.classname = "navbar"
+            }
+        })
+</script>
 </body>
 </html>
