@@ -15,38 +15,41 @@
     <div id="grid-container">
     <header>
         <nav>
-            <a href="index.html" id="logo">Footies</a>
             <div>
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <i class="fa-solid fa-bars"></i>
-                <i class="fa-solid fa-cart-shopping"></i>
+                <i id="ham" class="fa-solid fa-bars"></i>
+                <i id="search" class="fa-solid fa-magnifying-glass"></i>
+                <a href="index.html" id="logo">Footies</a>
             </div>
-            <ul>
+            <div>
+                <i id="vogn" class="fa-solid fa-cart-shopping"></i>
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <ul class="navbar">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="produkt.html">Products</a></li>
-                <li><a href="retur.html">Return and Delivery</a></li>
+                <li><a href="retur.html">Return and delivery</a></li>
             </ul>
-        </nav>
+        </nav> 
     </header>
     <main>
         <section>
-            <img src="https://placehold.co/600x400" alt="grå ramme">
+            <img src="img/shoes-584850_1280.jpg" alt="grå ramme">
             <h2>Product</h2>
         </section>
         <section>
-            <img src="https://placehold.co/600x400" alt="grå ramme">
+            <img src="img/istockphoto-1436061606-612x612.jpg" alt="grå ramme">
             <h2>Product</h2>
         </section>
         <Section>
-            <img src="https://placehold.co/600x400" alt="grå ramme">
+            <img src="img/istockphoto-1394359729-612x612.jpg" alt="grå ramme">
             <h2>Product</h2>
         </section>
         <Section>
-            <img src="https://placehold.co/600x400" alt="grå ramme">
+            <img src="img/istockphoto-182668944-612x612.jpg" alt="grå ramme">
             <h2>Product</h2>
         </section>
         <Section>
-            <img src="https://placehold.co/600x400" alt="grå ramme">
+            <img src="img/istockphoto-470122293-612x612.jpg" alt="grå ramme">
             <h2>Product</h2>
         </section>
         <section>
@@ -64,19 +67,16 @@
     </main>
     <footer>
         <h3>Back to top</h3>
-        <i class="fa-regular fa-circle-question"></i>
-        <i class="fa-solid fa-user"></i>
     </footer>
 </div>
 <script>
 
         let x = document.querySelector(".navbar")
-        
         document.getElementById("ham").addEventListener("click", (e) => {
-            if (x.classname === "navbar") {
-                x.classname += " responsive";
+            if (x.className === "navbar") {
+                x.className += " responsive";
             } else {
-                x.classname = "navbar"
+                x.className = "navbar"
             }
         })
 </script>

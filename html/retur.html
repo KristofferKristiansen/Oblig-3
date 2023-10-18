@@ -15,18 +15,21 @@
     <div id="grid-container">
     <header>
         <nav>
-            <a href="index.html" id="logo">Footies</a>
             <div>
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <i class="fa-solid fa-bars"></i>
-                <i class="fa-solid fa-cart-shopping"></i>
+                <i id="ham" class="fa-solid fa-bars"></i>
+                <i id="search" class="fa-solid fa-magnifying-glass"></i>
+                <a href="index.html" id="logo">Footies</a>
             </div>
-            <ul>
+            <div>
+                <i id="vogn" class="fa-solid fa-cart-shopping"></i>
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <ul class="navbar">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="produkt.html">Products</a></li>
                 <li><a href="retur.html">Return and delivery</a></li>
             </ul>
-        </nav>
+        </nav> 
     </header>
     <main>
         <Section>
@@ -64,7 +67,6 @@
     <footer>
         <h3>Back to top</h3>
         <i class="fa-solid fa-house"></i>
-        <i class="fa-solid fa-user"></i>
     </footer>
 </div>
 <script>
@@ -72,10 +74,10 @@
         let x = document.querySelector(".navbar")
         
         document.getElementById("ham").addEventListener("click", (e) => {
-            if (x.classname === "navbar") {
-                x.classname += " responsive";
+            if (x.className === "navbar") {
+                x.className += " responsive";
             } else {
-                x.classname = "navbar"
+                x.className = "navbar"
             }
         })
 </script>

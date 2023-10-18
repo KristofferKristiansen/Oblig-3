@@ -15,10 +15,12 @@
     <div id="grid-container">
     <header>
         <nav>
-            <a href="index.html" id="logo">Footies</a>
             <div>
                 <i id="ham" class="fa-solid fa-bars"></i>
                 <i id="search" class="fa-solid fa-magnifying-glass"></i>
+                <a href="index.html" id="logo">Footies</a>
+            </div>
+            <div>
                 <i id="vogn" class="fa-solid fa-cart-shopping"></i>
                 <i class="fa-solid fa-user"></i>
             </div>
@@ -59,15 +61,17 @@
         <h3>Back to top</h3>
     </footer>
     </div>
+
     <script>
         
         let x = document.querySelector(".navbar")
-        
-        document.getElementById("ham").addEventListener("click", (e) => {
-            if (x.classname === "navbar") {
-                x.classname += " responsive";
+       
+        document.getElementById("ham").addEventListener("click", (e)=>{
+            
+            if (x.className === "navbar") {
+                x.className += " responsive";
             } else {
-                x.classname = "navbar"
+                x.className = "navbar"
             }
         })
     </script>
