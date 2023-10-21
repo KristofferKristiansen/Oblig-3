@@ -201,34 +201,28 @@ footer{
     .navbar{
         display: flex;
         flex-direction: row;
-        gap: 1rem;
+        gap: 3rem;
         list-style: none;
         margin: 0;
+        height: 70px;
+        display: none;
+        justify-content: space-around;
     }
 
     .flex-section{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between; 
-    }
-
-    .flex-section{
-        width: 50%;
-    }
-
-    .flex-section section{
-        padding: 1rem;
         width: 40%;
-        align-self: center;
+        padding: 1rem; 
     }
 
-    .right img{
-        order: 1;
-        max-width: 50%;
+    .flex-section-2{
+        width: 40%;
+        padding: 1rem;
     }
-    
-    .left img{
-        max-width: 50%;
+
+    .rader{
+        flex-direction: row;
+        display: flex;
+        width: 100%;
     }
 }
 
