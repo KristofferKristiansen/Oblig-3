@@ -1,3 +1,8 @@
+*{
+    box-sizing: border-box;
+}
+
+/*designet for iphone 11 pro max */
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -30,15 +35,16 @@ header nav div{
     display: flex;
     gap: 1rem;
     font-size: 2rem;
+    text-align: center;
 }
 
 #logo{
     text-decoration: none;
     font-size: 2rem;
     text-align: center;
-    margin-left: 2.5rem;
     color: #fff;
-}   
+    margin-left: 2.5rem;
+}  
 
 .navbar{
     display: none;
@@ -46,7 +52,7 @@ header nav div{
 
 .responsive{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     position: absolute;
     background-color: #242424;
     margin: 0;
@@ -60,7 +66,7 @@ header nav div{
     color: #fff;
     display: inline-block;
     padding: 1rem;
-    text-decoration: none;
+    text-decoration: none;  
 }
 
 .flex-section{
@@ -179,6 +185,11 @@ footer{
     color: #fff;
 }
 
+#retur{
+    text-decoration: none;
+    color: #fff;
+}
+
 #pageup{
     text-decoration: none;
     color: #fff;
@@ -193,83 +204,164 @@ footer{
     padding-top: 0.1rem;
 }
 
-@media only screen and (min-width: 600px) {
+/* Designet for desktop*/ 
+@media only screen and (min-width: 760px) {
     #grid-container{
         grid-template-areas: "header header header" "main main main" "footer footer footer"
     }
 
+    #logo{
+        display: flex;
+        padding-left: 37rem;
+        font-size: 2.5rem;
+    }
+
     .navbar{
+        display: none;
+    }
+
+    .responsive{
         display: flex;
         flex-direction: row;
-        gap: 3rem;
-        list-style: none;
+        position: absolute;
+        background-color: #242424;
         margin: 0;
-        height: 70px;
-        display: none;
-        justify-content: space-around;
+        padding: 0;
+        top: 40px;
+        width: 100%;
+        list-style: none;
+    }
+    
+    .responsive a{
+        color: #fff;
+        display: inline-block;
+        padding: 1rem;
+        text-decoration: none;  
+    }
+
+    .startside{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .desktop{
+        display: flex;
+        flex-direction: row;
+        padding: 1rem;
+        gap: 1rem;
+        text-align: center;
     }
 
     .flex-section{
-        width: 40%;
-        padding: 1rem; 
+        width: 50%;
+        padding: 2rem; 
     }
 
     .flex-section-2{
-        width: 40%;
-        padding: 1rem;
+        width: 50%;
+        padding: 2rem;
     }
 
     .rader{
         flex-direction: row;
         display: flex;
         width: 100%;
+        gap: 5rem;
+    }
+
+    .fourway{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        padding: 1rem;
+        gap: 2rem;
+        float: right;
+        color: #fff;
+    }
+
+    .secondfourway{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        padding: 1rem;
+        gap: 3rem;
+        float: right;
+        color: #fff;
+    }
+
+    .filter{
+        display: none;
     }
 }
 
 #filter{
     font-size: 1.5rem;
+    color: #fff;
 }
 
 #sortby{
     font-size: 1.5rem;
+    color: #fff;
 }
 
 .rowproducts{
     display: flex;
+    color: #fff;
 }
 
 .columnproducts{
     flex: 50%;
     padding: 5px;
     line-height: 0.2;
+    color: #fff;
 }
 
 .rowproducts2{
     display: flex;
+    color: #fff;
 }
 
 .columnproducts2{
     flex: 50%;
     padding: 5px;
     line-height: 0.2;
+    color: #fff;
 }
 
 .rowproducts3{
     display: flex;
+    color: #fff;
 }
 
 .columnproducts3{
     flex: 50%;
     padding: 5px;
     line-height: 0.2;
+    color: #fff;
 }
 
 .rowproducts4{
     display: flex;
+    color: #fff;
 }
 
 .columnproducts4{
     flex: 50%;
     padding: 5px;
     line-height: 0.2
+}
+
+@media only screen and (max-width: 760px) {
+    
+    .desktop{
+        display: none;
+    }
+
+    .filtermenu{
+        display: none;
+    }
+
+    .sortbymenu{
+        display: none;
+    }
 }
