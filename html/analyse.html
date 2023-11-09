@@ -33,18 +33,75 @@
         </nav> 
     </header>
     <main>
-        <h1>Analyse av Footies</h1>
+        <h1>Analyseside for Footies</h1>
+        <h3>Relevante Nøkkelord/søkeord for nettsiden.</h3>
+        <p>De mest relevante søkeordene for nettsiden som jeg har valgt er: sko, skobutikk, løpesko og treningssko.</p>
+        <p>Jeg valgte disse ettersom at nettsiden er for sko og en del av produktene på min side er rettet mot trening og løping.</p>
+        <p>I tillegg til dette er også disse ulike søkene populære hos google trends.</p>
+        <p>Sammensetningen av relevanse og popularitet gjør at nøkkelordene er best for min nettside.</p>
         <Section>
-            <h2>Forside</h2>
-            <img src="img/Skjermbilde 2023-11-08 145006.png" alt="Lighthouse forside" style="width: 50%;">
+            <h2>SEO-analyse</h2>
+            <Section>
+                <h3>Forside</h3>
+                <img src="img/Skjermbilde 2023-11-08 145006.png" alt="Lighthouse forside" style="width: 50%;">
+                <p>Dette er en overordnet oversikt over de ulike resultatene på lighthouse analysen på min nettside.</p>
+                <p>Nettsiden presterer dårligst på performance men høyt på accessability, best practices og viktigst av alt for denne analysen SEO.</p>
+                <img src="img/Skjermbilde 2023-11-08 144440.png" alt="SEO forside" style="width: 20%;">
+                <p>SEO analysen er det jeg vil ta en nærmere titt på.</p>
+                <p>Når man ser på SEO seksjonen får jeg opp meldingen "Document does not have a meta description".</p>
+                <p>Dette betyr at elementet som skal gi søkemotorene en oppsummering av hva som er på siden ikke er tilstedet.</p>
+                <p>Dette kan forekomme enten hvis man ikke har et meta element i koden eller hvis meta elementet er tomt.</p>
+                <p>I mitt tilfelle har jeg lagt inn en meta, men uten et særegent navn for de ulike sidene. Som kan være grunnen til at problemet oppstår.</p>
+            </Section>
+            <Section>
+                <h3>Produktside</h3>
+                <img src="img/Skjermbilde 2023-11-08 145121.png" alt="Lighthouse produktside" style="width: 50%;">
+                <p>Akkurat som på forsiden er tallene på de fleste analysene like, bortsett fra performance.</p>
+                <p>Her er også performance rangert høyt, dette kan skyldes at bildene er riktig innstilit i forhold til størrelse og tekst.</p>
+                <img src="img/Skjermbilde 2023-11-08 145436.png" alt="SEO produktside" style="width: 20%;">
+                <p>Det ser ut til at samme problem skjer her under SEO analysen som på forsiden.</p>
+                <p>Meta elementet har ikke et eget navn, noe som får søkemotoren til å få opp feilen. Derfor blir også scoren lavere enn 100.</p>
+            </Section>
+            <Section>
+                <h3>Retur- og Leveranseside</h3>
+                <img src="img/Skjermbilde 2023-11-08 150251.png" alt="Lighthouse returside" style="width: 50%;">
+                <p>På retursiden er alle kategoriene veldig høyt rangert, noe som kan være på grunn av mangelen på bilder.</p>
+                <p>Det fjerner problematikken med oppløsning og størrelse på bildene som var et problem på forsiden.</p>
+                <img src="img/Skjermbilde 2023-11-08 152548.png" alt="SEO retur" style="width: 20%;">
+                <p>Det ser ut som at alle sidene får opp samme feilen som forsiden.</p>
+                <p>Her skulle også meta elementet hatt et eget navn for søkemotoren.</p>
+                <p>Ettersom at scoren på alle sidene likevel er høy. Kan man se at dette med meta elementet ser ut til å være det eneste problemet som analysen har fått opp.</p>
+                <p>Ettersom at SEO analysenscoren er tilnærmet lik på alle sidene, gir dette også mening.</p>
+            </Section>
         </Section>
         <Section>
-            <h2>Produktside</h2>
-            <img src="img/Skjermbilde 2023-11-08 145121.png" alt="Lighthouse produktside" style="width: 50%;">
-        </Section>
-        <Section>
-            <h2>Retur- og Leveranseside</h2>
-            <img src="img/Skjermbilde 2023-11-08 150251.png" alt="Lighthouse returside" style="width: 50%;">
+            <h2>UU-analyse</h2>
+            <section>
+                <h3>Forside</h3>
+                <img src="img/Skjermbilde 2023-11-09 130511.png" alt="UU forside" style="width: 10%;">
+                <p>Ved å kjøre en UU-analyse på forsiden får jeg ikke opp noen seriøse feilmeldinger med heller mindre advarsler</p>
+                <img src="img/Skjermbilde 2023-11-09 130544.png" alt="UU feil" style="width: 10%;">
+                <p>På bilde over er resultatene fra analysen og her ser vi at problemene som støtes på er knyttet til teksten og heading i koden.</p>
+                <p>Liten tekst som gjør det vanskelig for besøkende å lese og manglende hovedheadinger ser derimot ut til å være de eneste problemen fra analysen.</p>
+            </section>
+            <Section>
+                <h3>Produktside</h3>
+                <img src="img/Skjermbilde 2023-11-09 130638.png" alt="UU produktside" style="width: 10%;">
+                <p>Derimot på produktsiden støter jeg på flere større feil fra UU-analysen.</p>
+                <img src="img/Skjermbilde 2023-11-09 130713.png" alt="UU feil produktside" style="width: 10%;">
+                <p>På bilde over er dte en oversikt over problemene som analysen tok tak i.</p>
+                <p>Problemene er knyttet til lave kontraster mellom teksten under bildene og bakgrunnsbilde. Problemene dette kommer med er at brukerne av nettsiden kan ha problemer med å se teksten når kontrastene er for lave.</p>
+                <p>De mindre problemene er knyttet til at flere av bildene har samme type tekst. Noe som kan virke som at noen av bildene har uriktig tekst.</p>
+                <p>De resterende problemene er like som forssiden. Både liten tekst på to av bildene og manglende heading på noen av seksjonene.</p>
+                <p>Det var også denne siden som hadde de største problemene, trolig grunnet all ulik tekst, ikoner og produkter på samme side.</p>
+            </Section>
+            <section>
+                <h3>Retur- og Leveranseside</h3>
+                <img src="img/Skjermbilde 2023-11-09 130801.png" alt="UU returside" style="width: 10%;">
+                <p>UU-analyse på retur- og leveransesiden er nokså lik forsiden.</p>
+                <p>Problemer med mindre tekst og noen problemer med heading. Bruk av h1 innenfor seksjonene kan minimere noen av problemene.</p>
+                <p>Bortsett fra dette ser resten ut til å fungere slik det skal.</p>
+            </section>
         </Section>
     </main>
     <footer>
